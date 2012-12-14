@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block body %}
+<h2>Create User</h2>
+<form action="{{ url_for('create_user') }}" method=post>
+<div class=newuser><table align=><tr>
+
+	<td>Username:</td>
+	<td><input type="text" name="Username"></td>
+</tr><tr>
+	<td>Email:</td>
+	<td><input type="email" name="Email" autocomplete="off"></td>
+</tr><tr>
+	<td>Password:</td>
+	<td><input type="password" name="Password" autocomplete="off"></td>
+</tr><tr>
+	<td>Confirm Password:</td>
+	<td><input type="password" name="ConfPassword"></td>
+
+{% if session.seclvl >= 3%}
+<tr>
+	<td>Clearence Level:</td>
+	<td><select name="cl_list" size=1 style="width:100%;">
+		<option selected>1
+    		<option>2
+    		<option>3
+	</select></td>
+</tr>
+{% endif %}
+<tr>
+<td></td><td><input type="submit" value="Confirm"></td>
+</tr></table></div>
+</form>
+{% endblock %}

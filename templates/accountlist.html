@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block body %}
+<h2>Account List</h2>
+<div class=userlist>
+<table style="width:100%;">
+<tr style="background:#CEE5F5; text-align: center;">
+{% if entries != []%}
+<td><b>Name</td><td><b>Email Address</td><td><b>Clearence Level</td><td><b>Account Active</td>
+</tr>
+{% for user in entries %}
+    <tr style="text-align: center;">
+    <td>{{ user[0] }}</td><td>{{ user[2]}}</td><td>{{ user[3] }}</td><td>{{ user[4] }}</td>
+    </tr>
+{% endfor %}
+{% else %}
+    <p>There are no users :(, <a href="{{ url_for('create_user') }}">click here</a> to create one.</p>
+{% endif %}
+</table></div>
+{% endblock %}

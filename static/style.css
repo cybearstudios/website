@@ -1,0 +1,42 @@
+
+body            { font-family: courier; background-image:url('imgs/bg.png'); }
+a, h1, h2       { color: #000000; margin: 0px;}
+h2              { font-size: 1.2em; }
+p               { font-size: 14px; }
+a               { font-size: 14px; }
+a:link          { text-decoration: none; }
+a:visited       { text-decoration: none; }
+a:hover         { text-decoration: underline; }      
+table,tr,td     { border-collapse:collapse; }
+
+ul		{ list-style-type: none; margin: 0; padding: 0; }
+li		{ display: inline; float: left; }
+
+
+input[type="text"], input[type="email"], input[type="password"]				{ border-bottom: 2px solid #ff4500; border-top: none; border-left: none; border-right: none;}
+input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover	{ background-color: #ff9966}
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus	{ background-color: #d8d8d8}
+input[type="submit"] 		{ border: 2px solid #ff4500; background-color: #ff9966}
+input[type="submit"]:hover 	{ background-color: #ff6633}
+
+
+.login          { position: fixed; left: 0px; bottom: 50px; margin: 0px ;width: 100%; border-top: 5px solid #ff4500; border-bottom: 5px solid #ff4500; padding: 0.8em; background: white; }
+.page  		{ margin: auto; width: 60em; border: 5px solid #ff4500; background: white; }
+
+.metanav        { padding: 0px; text-align: right; font-size: 1em; margin-bottom: 1em; background: #b0b0b0; width: 60em; border-top: 5px solid #ff4500; position: relative;}
+
+.footer         { font-style: italic; background: #b0b0b0; width: 60em; top: 0.85em; position: relative; text-align: center; }
+.content	{ padding: 1.2em; }
+
+.flash  	{ text-align: center; margin: auto; padding: 5px; text-align: center; background: #CEE5F5; border-left: 5px solid #ff4500; border-right: 5px solid #ff4500; border-top: 5px solid #ff4500; border-bottom: none; position: static; bottom: 0px; width: 400px; }
+.error		{ text-align: center; margin: auto; padding: 5px; text-align: center; background: #F0D6D6; border-left: 5px solid #ff4500; border-right: 5px solid #ff4500; border-top: 5px solid #ff4500; border-bottom: none; position: static; bottom: 0px; width: 400px; }
+.notice         { position: fixed; bottom: 0px; width: 100%; }
+
+.newuser td	{ text-align: right; padding-bottom: 10px; }
+.userlist td	{ padding: 0.4em ; border: 1px dashed #AACBE2; }
+
+.metanav a			{ display: block; width: 120px; text-align: center; padding: 4px; }
+.metanav a:link, a.visited	{ text-decoration: none; background-color: #b0b0b0; }
+.metanav a:hover, a.active    	{ text-decoration: none; background-color: #ff4500; }
+.metanav table,tr,td		{ margin: 0; padding: 0; border: 0; }
+
